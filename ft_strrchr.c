@@ -15,19 +15,17 @@
 char	*ft_strrchr(const char *s, int c)
 {
 	char		*last;
-	char		find;
 	size_t		i;
 
 	last = NULL;
-	find = (unsigned char)c;
 	i = 0;
 	while (s[i] != '\0')
 	{
-		if (s[i] == find)
-			last = ((char *)&s[i]);
+		if (s[i] == (unsigned char)c)
+			last = ((char *)(unsigned long)&s[i]);
 		i++;
 	}
-	if (find == '\0')
-		return ((char *)&s[i]);
+	if ((unsigned char)c == '\0')
+		return ((char *)(unsigned long)&s[i]);
 	return (last);
 }
