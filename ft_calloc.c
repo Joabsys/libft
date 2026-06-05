@@ -20,7 +20,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	if (size != 0 && nmemb > ((size_t) -1) / size)
 		return (NULL);
 	total = nmemb * size;
-	p = malloc (total);
+	p = malloc(total);
 	if (!p)
 		return (NULL);
 	ft_memset(p, 0, total);
