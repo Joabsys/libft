@@ -56,7 +56,7 @@ By building this library, students gain a deep understanding of how fundamental 
 | `ft_putendl_fd` | Outputs a string followed by newline to fd |
 | `ft_putnbr_fd` | Outputs an integer to a file descriptor |
 
-**Bonus — Linked list functions:**
+**— Linked list functions:**
 
 | Function | Description |
 |---|---|
